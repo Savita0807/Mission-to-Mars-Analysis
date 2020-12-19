@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mission Mars</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="jumbotron text-center">
+      <h1>Mission to Mars</h1>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
+    </div>
+    <h2>Latest Mars News</h2>
+    <h4>{{Mars_data_mongo.News_Title }}</h4>
+    <p>{{Mars_data_mongo.News_Para}}<p>
+    <div class="row">  
+      <div class="col-md-7">
+        <h2>Featured Mars Image</h2>
+        <img id="fig1" src="{{ Mars_data_mongo.Img_url}}" alt="feature Img">
+      </div>
+      <div class="col-md-4">
+        <h3>Mars Facts</h3>
+         <p> {{Mars_data_mongo.Facts_tbl|safe}} </p>
+        </table>
+      </div> 
+    </div>
+   
+    <div class = "row">
+      <h2 class = "top-title">Mars Hemisphere</h2>
+      <div class ="col-md-5" id="block-1">
+        <a href= "{{ Mars_data_mongo.Img_hemi[0]['img_url']}}"><img src= "{{ Mars_data_mongo.Img_hemi[0]['img_url']}}", alt= "Hemi_1"></a>
+        <h3>"{{ Mars_data_mongo.Img_hemi[0]['title']}}"</h3>
+      </div>
+      <div class ="col-md-4" id="block-2">
+        <a href= "{{ Mars_data_mongo.Img_hemi[1]['img_url']}}"><img src= "{{ Mars_data_mongo.Img_hemi[1]['img_url']}}", alt= "Hemi_2"></a>
+        <h3>"{{ Mars_data_mongo.Img_hemi[1]['title']}}"</h3>
+      </div>
+      <div class ="col-md-5" id="block-3">
+        <a href= "{{ Mars_data_mongo.Img_hemi[2]['img_url']}}"><img src= "{{ Mars_data_mongo.Img_hemi[2]['img_url']}}", alt= "Hemi_3"></a>
+        <h3>"{{ Mars_data_mongo.Img_hemi[2]['title']}}"</h3>
+      </div>
+      <div class ="col-md-4" id="block-4">
+        <a href= "{{ Mars_data_mongo.Img_hemi[3]['img_url']}}"><img src= "{{ Mars_data_mongo.Img_hemi[3]['img_url']}}", alt= "Hemi_4"></a>
+        <h3>"{{ Mars_data_mongo.Img_hemi[3]['title']}}"</h3>
+      </div>
+    </div>    
+  </div>
+
+</body>
+</html>

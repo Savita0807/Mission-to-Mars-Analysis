@@ -1,0 +1,66 @@
+h1 {
+    color: blue;
+}
+h2
+{
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-weight: bolder;
+}
+h3
+{
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-weight: bolder;
+}
+h4
+{
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-weight: bolder;
+}
+.top-title
+{
+    padding-left: 550px; 
+}
+
+#fig1
+{
+    height:55vh;
+    width: 40vw;  
+}
+#block-1
+{
+    text-align: center;
+}
+#block-2
+{
+    text-align: center;
+}
+#block-3
+{
+    text-align: center;
+}
+#block-4
+{
+    text-align: center;
+}
+
+#block-1 img
+    {
+    height:40vh;
+    width: 20vw;
+    
+    }
+#block-2 img
+    {
+    height:40vh;
+    width: 20vw;
+        }
+#block-3 img
+    {
+    height:40vh;
+    width: 20vw;
+    }
+#block-4 img
+    {
+    height:40vh;
+    width: 20vw;
+    }
