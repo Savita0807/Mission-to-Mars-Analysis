@@ -1,7 +1,5 @@
 # Mission-to-Mars-Analysis - Web Scraping Challenge
 
-# Mission to Mars
-
 ![mission_to_mars](Images/mission_to_mars.png)
 
 In this assignment, need to build a web application that scrapes various websites for data related to the Mission to Mars and displays the information in a single HTML page. The following outlines are needed.
